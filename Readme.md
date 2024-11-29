@@ -16,3 +16,5 @@ The Guilt Trip Expense Tracker is an opportunity for a more humorous approach to
 5. Spending Summary: General expenses plus some remarks and cartoons on.
 
 6. Challenges: Different activities that are executed to reduce the amount spent with additional sarcasm aimed at the person during every failure of the task.
+
+Thank you.
