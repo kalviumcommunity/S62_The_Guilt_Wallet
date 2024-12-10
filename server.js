@@ -3,7 +3,7 @@ const app = express();
 
 
 app.get('/ping', (req, res) => {
-    res.send('Meh..');
+    res.send('Pong!');
 });
 
 const port = 3000;
