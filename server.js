@@ -6,9 +6,10 @@ if (process.env.NODE_ENV !== 'PRODUCTION') {
   }
 
 
-  app.get('/ping', (req, res) => {
-    res.send('Pong!');
-});
+  app.get('/home', async (req, res) => {
+    const dbStatus = await connect_db();
+    res.send(`Database Connection Status: ${dbStatus}`);
+  });
 
 const port = 3000;
 app.listen(port, () => {
