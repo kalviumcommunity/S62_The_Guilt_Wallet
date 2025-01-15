@@ -5,7 +5,7 @@ const connect_db = require('./Database/database.js');
 if (process.env.NODE_ENV !== 'PRODUCTION') {
     require('dotenv').config();
   }
-app.use(express.json());
+  app.use(express.json());
 
 app.get('/', async (req, res) => {
   const checkStatus = await connection.connect();
@@ -17,7 +17,7 @@ app.get('/', async (req, res) => {
 
 
 
- 
+ app.use('/user-router', require('./routes/routes.js'));
   
 const port = 3000;
 app.listen(port, () => {
